@@ -1,0 +1,738 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher/Philosopher-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  margin-top: 31px;
+  margin-bottom: 160px;
+}
+.header-div {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-header {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #150c01;
+
+  opacity: 0.6;
+}
+.nav-item-link {
+  color: #150c01;
+}
+.nav-item-link:hover {
+  color: #dc780b;
+}
+.nav-item-link:active {
+  color: burlywood;
+}
+.nav-item-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #dc780b;
+  border-radius: 5px;
+  border: none;
+  padding: 14px 30px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.nav-item-btn:hover {
+  background-color: black;
+  color: wheat;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 223px;
+}
+
+.section-left-h1 {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48.83px;
+  line-height: 58px;
+  color: #150c01;
+  width: 555px;
+  margin-bottom: 42px;
+}
+.section-left-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #150c01;
+  opacity: 0.7;
+  width: 555px;
+  margin-bottom: 50px;
+}
+.section-left-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+  color: #ffffff;
+  background: #dc780b;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 20px 40px;
+  transition: all 0.6s linear;
+}
+.btn-2 {
+  color: #dc780b;
+  background-color: #fff;
+  border: 1.5px solid #dc780b;
+  border-radius: 5px;
+}
+.section-left-btn:hover {
+  border: 1px solid #dc780b;
+  color: #dc780b;
+  background-color: #fff;
+}
+.btn-2:hover {
+  color: #fff;
+  background-color: #dc780b;
+}
+
+.section-div-right-img {
+  position: absolute;
+  top: 45px;
+  left: 660px;
+  z-index: -1;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 124px;
+}
+.section-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.section-top-h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #dc780b;
+  opacity: 0.7;
+  margin-bottom: 7px;
+}
+.section-top-h4 {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: #150c01;
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+.features-delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.feature-img {
+  margin-bottom: 33px;
+}
+.features-title {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  color: #150c01;
+  margin-bottom: 15px;
+}
+.features-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #150c01;
+  opacity: 0.7;
+  width: 300px;
+
+  text-align: center;
+}
+.section-aboutus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 115px;
+}
+
+.section-aboutus::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/img/Vector3.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+  left: 0;
+  width: 957px;
+  height: 801px;
+}
+
+.aboutus-img {
+  background: #c4c4c4;
+  border-radius: 35px;
+}
+.aboutus-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #dc780b;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.aboutus-title {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 41px;
+  color: #150c01;
+  width: 487px;
+  margin-bottom: 30px;
+}
+.aboutus-paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #150c01;
+  opacity: 0.7;
+  width: 487px;
+  margin-bottom: 40px;
+}
+.read-more-btn {
+  background: #dc780b;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 12px 35px;
+  transition: all 0.4s linear;
+  cursor: pointer;
+}
+.read-more-btn:hover {
+  color: #dc780b;
+  border: 1px solid #dc780b;
+  background-color: #fff;
+}
+.section-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.menu-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-top-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #dc780b;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.menu-top-title {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #150c01;
+  margin-bottom: 25px;
+}
+.menu-top-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #150c01;
+  opacity: 0.7;
+  width: 748px;
+  margin-bottom: 60px;
+}
+.menu-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.menu {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 75px 10px 10px 10px;
+  width: 360px;
+}
+.div-menu {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.menu-images {
+  margin-bottom: 21px;
+}
+.menu-names-cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-name {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  /* identical to box height, or 96% */
+
+  display: flex;
+  align-items: center;
+
+  color: #150c01;
+}
+.span-menu {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  /* identical to box height, or 96% */
+
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #150c01;
+}
+.menu-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  display: flex;
+  align-items: center;
+
+  color: #150c01;
+
+  opacity: 0.7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.button-plus {
+  background: #dc780b;
+  color: #fff;
+  border-radius: 5px;
+  padding: 11px 15px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+}
+.button-plus:hover {
+  background-color: #fff;
+  color: #dc780b;
+  border: 1px solid #dc780b;
+}
+.learn-more {
+  margin-top: 61px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #dc780b;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #dc780b;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: all 0.6s linear;
+}
+.learn-more:hover {
+  color: #fff;
+  background-color: #dc780b;
+}
+.take-away {
+  background: #fbf1e7;
+  margin-bottom: 213px;
+}
+.take-away-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.tekaway-left-div {
+  padding-top: 114px;
+  padding-bottom: 130px;
+}
+.take-away-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #dc780b;
+  opacity: 0.7;
+  margin-bottom: 5px;
+}
+.marketing-plane-item {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 41px;
+  color: #150c01;
+  width: 555px;
+  margin-bottom: 29px;
+}
+.take-away-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #150c01;
+  opacity: 0.7;
+  width: 555px;
+  margin-bottom: 39px;
+}
+.teak-away-buttons {
+  display: flex;
+  gap: 30px;
+}
+.take-away-button-appstore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #150c01;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 15px 30px;
+  transition: all 0.4s linear;
+}
+
+.play {
+  border: 1.5px solid gainsboro;
+  border-radius: 5px;
+  background: none;
+  color: #150c01;
+}
+
+.take-away-button-appstore:hover {
+  background-color: #fff;
+  color: #000;
+}
+.img-phone {
+  position: absolute;
+  right: 0;
+}
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.testimonial-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #dc780b;
+  opacity: 0.7;
+  width: 136px;
+  margin-bottom: 12px;
+}
+.testimonial-item {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 24px;
+  color: #000000;
+  width: 477px;
+  margin-bottom: 23px;
+}
+.testimonial-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.7;
+  width: 750px;
+  margin-bottom: 17px;
+}
+.testimonial-div-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-paragraph {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  width: 506px;
+  margin-bottom: 20px;
+}
+.star-testimonial {
+  margin-bottom: 32px;
+}
+.Augusta {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  width: 168px;
+  margin-bottom: 6px;
+}
+.desinger {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.7;
+}
+.contact {
+  background: rgba(251, 241, 231, 0.9);
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 115px;
+  margin-bottom: 46px;
+}
+.contact-h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #dc780b;
+  opacity: 0.7;
+}
+.contact-item {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 41px;
+  text-align: center;
+  color: #150c01;
+  width: 749px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 117px;
+}
+.input {
+  padding-top: 30px;
+  padding-right: 402px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  border-radius: 10px;
+  border: none;
+}
+.send {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  color: #ffffff;
+  background: #dc780b;
+  border-radius: 10px;
+  padding: 30px 57px;
+  border: none;
+  margin-left: -20px;
+}
+.footer {
+  background: #252525;
+}
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 137px;
+  padding-bottom: 104px;
+}
+
+.icon-food-img {
+  margin-bottom: 25px;
+}
+.footer-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-top: 17px;
+}
+.footer-links {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  opacity: 0.7;
+}
+
+.div-for-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
